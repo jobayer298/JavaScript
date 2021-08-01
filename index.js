@@ -17,3 +17,4 @@ console.log(add);
 
 var rand = Math.floor(Math.random() * (20-10)) + 10 
 console.log(rand);
+console.log(rand);
