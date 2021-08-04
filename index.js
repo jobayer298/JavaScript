@@ -13,7 +13,7 @@ var parsing = parseInt(stringValue)
 var add = parsing + intValue
 console.log(add);
 
-// Generate a random value from 10 to 20 and print them
+// Generate a random val ue from 10 to 20 and print them
 
 var rand = Math.floor(Math.random() * (20-10)) + 10 
 console.log(rand);
