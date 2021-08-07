@@ -60,5 +60,5 @@ function firstNonRepeatingCharacter(str) {
     }
   }
 }
-console.log(firstNonRepeatingCharacter("aaccthhdd"));
+console.log(firstNonRepeatingCharacter("abacddbec"));
 
