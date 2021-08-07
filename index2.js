@@ -44,12 +44,21 @@ var array = [1,2,3,4,5]
 array.splice(0,1)
 console.log(array)
 
-var s = "abacddbec"
-function firstNotRepeatingCharacter(s) { 
-  for (let i = 0; i < s.length; i++) { 
-    if(s.indexOf(s.charAt(i)) == s.lastIndexOf(s.charAt(i))) {
-      return s
+// function firstNonRepeatingCharacter(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (str.indexOf(char) == i && str.indexOf(char, i + 1) == -1) {
+//       return char;
+//     }
+//   }
+// }
+// console.log(firstNonRepeatingCharacter("aaccthhdd"));
+function firstNonRepeatingCharacter(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.indexOf(str[i]) === i && str.indexOf(str[i], i + 1) === -1) {
+      return str[i];
     }
   }
 }
-console.log(firstNotRepeatingCharacter());
+console.log(firstNonRepeatingCharacter("aaccthhdd"));
+
