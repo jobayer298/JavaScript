@@ -61,6 +61,6 @@ function firstNonRepeatingCharacter(str) {
   }
 }
 console.log(firstNonRepeatingCharacter("abacddbec"));
-console.log(firstNonRepeatingCharacter("abacddbec"));
-console.log(firstNonRepeatingCharacter("abacddbec"));
+
+
 
