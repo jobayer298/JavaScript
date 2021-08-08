@@ -42,14 +42,14 @@ console.log(myColor.join("+"));
 
 //5. Write a JavaScript program to construct the following pattern, using a nested for loop. 
 let n = 5; 
-let string = "";
 for (let i = 1; i <= n; i++) {
+  let string = "";
   for (let j = 0; j < i; j++) {
     string += "*";
   }
-  string += "\n";
+  console.log(string);
 }
-console.log(string);
+
 
 //6. Write a JavaScript function to find the first non-repeated character. Go to the editorSample arguments : 'abacddbec 'Expected output: 'e'
 
