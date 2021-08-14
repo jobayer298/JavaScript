@@ -45,9 +45,9 @@ console.log(myColor.join("+"));
 
 //5. Write a JavaScript program to construct the following pattern, using a nested for loop. 
 let n = 5; 
-for (let i = 1; i <= n; i++) {
+for (let i=1; i<=n; i++) {
   let string = "";
-  for (let j = 0; j < i; j++) {
+  for (let j=0; j<i; j++) {
     string += "*";
   }
   console.log(string);
@@ -64,6 +64,7 @@ function firstNonRepeatingCharacter(str) {
   }
 }
 console.log(firstNonRepeatingCharacter("abacddbec"));
+
 
 
 
