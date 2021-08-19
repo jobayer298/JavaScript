@@ -5,38 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button{
+            color: #fafafa;
+            background: rgb(8, 8, 8);
+            padding: 14px 23px;
+            margin: 100px 100px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+        }
+    </style>
 </head>
 <body>
-    <!-- <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus magnam suscipit deleniti libero commodi corporis aperiam similique minus laborum dolorum quos blanditiis sunt ducimus aliquid incidunt, facere possimus veniam.</p>
-    <p class="para">sifat</p>
-    <p class="para">sifat</p>
-    <p class="para">sifat</p> -->
-    <p class="head">jobayer</p>
-    <p class="head">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, nesciunt. Labore, pariatur cum. Asperiores aliquid officia repellendus perspiciatis ab repudiandae sapiente voluptas.</p>
-    <p class="head">I am third</p>
-
+    <button onclick = onclickLoad() >Jobayer</button>
+    <button id="button2">Button2</button>
+    <button id="button3">Button3</button>
+    <button id="button4">Button4</button>
+    <div style="background-color: orangered;" id="div">
+        <h1 id="first">hi</h1>
+        <h1>hello</h1>
+    </div>
     <script>
-        // var para = document.getElementsByClassName("para")
-        // for(var i=0;i<para.length;i++){
-        //     var element = para[i]
-        //     console.log(element);
-        //     if(i%2==0){
-        //         element.style.backgroundColor= "red"
-        //     }else{
-        //         element.style.backgroundColor = "blue"
-        //     }
-            
-        // }
-            var para = document.getElementsByClassName("head")
-            for(var i=0; i<para.length; i++){
-                console.log(para[i]);
-                var element = para[i]
-                element.style.backgroundColor = "red"
-                element.style.fontSize = "20px"
-                element.style.color = "#fafafa"
+        //creating new element
+        const myDiv = document.getElementById("div")
+        const heading3 = document.createElement("h1");
+        var text = document.createTextNode("Hi Hello")
+        heading3.appendChild(text)
+        myDiv.appendChild(heading3)
+        const heading1 = document.querySelector("#first")
+        heading1.innerHTML = "Jobayer"
 
-            }
+        function onclickLoad(){
+            alert("Hey! You are welcome")
+        }
+        let btn2 = document.getElementById("button2")
+        btn2.onclick = function(){
+            document.body.style.backgroundColor = "cyan"
 
+        }
+        document.getElementById("button3").onclick = function(){
+            document.body.style.backgroundColor = "cyan"
+        }
+        document.getElementById("button4").addEventListener("click" , function(){
+            document.body.style.backgroundColor = "blue"
+        })
     </script>
 </body>
 </html>

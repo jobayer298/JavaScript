@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <style>
+        .pizza-pic {
+        height: 250px;
+        width: 270px;
+        transition: .3s;
+    }
+    .pizza-pic:hover{
+        transform: scale(1.1);
+    }
+
+    .card {
+        width: 270px;
+        overflow: hidden;
+        border: 2px solid #f0ecee;
+        border-radius: 10px;
+        background: #F7F7F7;
+    }
+    input {
+        width: 106px;
+        height: 46px;
+        outline: none;
+        background: rgba(255, 255, 0, 0.267);
+        color: #030303 !important;
+        font-weight: bold;
+        font-size: 26px;
+    }
+    button#add {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+    button#sub {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+body{
+    background: #444;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                    <div class=" m-auto card">
+                        <img src="img/pizza5.jpg"
+                            class="card-img-top pizza-pic " alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Primavera Pizza</h5>
+                            <h6 class="card-subtitle mt-1  text-muted ">Quantity</h6>
+                        </div>
+                        <div class="addSub m-auto mb-4 d-flex">
+                            <button id="add" class="btn btn-warning">+</button>
+                            <input class="text-center border-0  p-1" type="number" value="0">
+                            <button id="sub" class="btn btn-warning">-</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="pizza.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  </body>
+</html>

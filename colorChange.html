@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            color: #fafafa;
+            background: rgb(8, 8, 8);
+            padding: 14px 23px;
+            margin: 100px 100px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button">Button2</button>
+    <script>
+       const btn = document.getElementById("button");
+       function random(number){
+           return Math.floor(Math.random() * number)
+       }
+       btn.onclick=function(){
+           const randomColor = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+        //    document.body.style.backgroundColor = randomColor;
+        event.target.style.backgroundColor = randomColor
+       }
+    </script>
+</body>
+
+</html>
