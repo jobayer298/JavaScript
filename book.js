@@ -8,7 +8,7 @@ button.addEventListener("click",function(event){
     event.preventDefault();
 
     // ?basic validation
-    if(title.value == "" && author.value == "" && year.value == ""){
+    if(title.value == "" || author.value == "" || year.value == ""){
         alert("Fill up the value")
     }else{
         const newRow = document.createElement("tr")

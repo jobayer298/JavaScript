@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(120deg,#ff001c,#2f09ff);
+    color: #fafafa;
+}
+form,header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.todo-form{
+    display: flex;
+    transition: all .3s ease;
+}
+.todo-form input{
+    border: none;
+    padding: 8px 15px;
+    width: 350px;
+    background: #fafafa;
+    outline: none;
+    transition: all .3s ease;
+    font-size: 1rem;
+}
+.todo-form button{
+    width: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(45, 218, 45);
+    color: #fafafa;
+    transition: all .3s ease;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.todo-container .todo-list{
+    list-style: none;
+    min-width: 25%;
+}
+.todo{
+   display: flex;
+   color: rgb(0, 0, 0);
+   justify-content: space-between;
+   background: #fafafa;
+   margin-bottom: 6px;
+   align-items: center;
+}
+.todo .todo-item{
+    flex: 1;
+    font-size: 1rem;
+    padding: 6px;
+
+}
+.completed-button,
+.trash-button{
+    padding: 9px;
+    border: none;
+    color: #fafafa;
+    outline: none;
+    cursor: pointer;
+}
+.completed-button{
+    background: rgb(19, 155, 19);
+}
+.trash-button{
+    background: rgb(255, 32, 32);
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+select{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .5rem;
+    width: 7rem;
+    color: #ff001c;
+}
+.select{
+    position: relative;
+    margin-left: 1rem;
+}
+.select::after {
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px;
+    background: #ff7300;
+    color: #fafafa;
+    pointer-events: none;
+}
